@@ -1,0 +1,139 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+button,
+.form {
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+  background: linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+}
+h1 {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 2rem;
+}
+.card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 10px;
+}
+label {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 11rem;
+}
+input {
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  width: 40%;
+  border-bottom: 1px solid black;
+  border-radius: 7px;
+  font-size: 1.4rem;
+}
+#password {
+  width: 67%;
+  margin-right: 7px;
+}
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.pass {
+  position: relative;
+  display: flex;
+  width: 60%;
+  align-items: center;
+}
+.icon {
+  position: absolute;
+  left: 60%;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.button,
+.desc {
+  display: flex;
+  width: 70vw;
+  justify-content: center;
+  margin-top: 30px;
+}
+.desc {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+button {
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+}
+button:hover {
+  cursor: pointer;
+}
+p {
+  width: 45%;
+  text-align: center;
+  font-size: 1.3rem;
+  color: red;
+}
+.error {
+  border: 2px solid red;
+}
+a {
+  text-decoration: none;
+  color: #27cdff;
+}
+@media (max-width: 450px) {
+  .container {
+    margin-top: 1.5rem;
+  }
+  .card {
+    display: block;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  input {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  #password {
+    width: 100%;
+    margin-right: 5px;
+  }
+  .pass {
+    width: 100%;
+    position: relative;
+  }
+  .icon {
+    position: absolute;
+    top: 35%;
+    left: 88%;
+  }
+  .button,
+  .desc {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    padding: 0.5rem 2rem;
+  }
+  p {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
